@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "4267e52b-fceb-4d80-841b-e3940ecd7134",
+		"name": "GETWAY-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9520284"
+	},
+	"item": [
+		{
+			"name": "GETWAYS",
+			"item": [
+				{
+					"name": "GET ALL GETWAYS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/getway",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getway"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/getway/640a3968dd89342785049ff0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getway",
+								"640a3968dd89342785049ff0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE GETWAY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/getway",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getway"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE GETWAY",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"GETWAY\",\n    \"ip\": \"192.168.1.2\",\n    \"devices\": [\n        \"6409e38eaa473702937a48c1\"\n    ]\n}s",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/getway/640a3968dd89342785049ff0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getway",
+								"640a3968dd89342785049ff0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE GETWAY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/getway/640a3968dd89342785049ff0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getway",
+								"640a3968dd89342785049ff0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL GETWAYS DEVICES IDs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/getway/640a66150573174130543f52/devices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getway",
+								"640a66150573174130543f52",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD MULIT GETWAY DEVICES",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"devices\": [\n        \"6409e38eaa473702937a48c1\",\n        \"640a275ea041aab8c1707aa2\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/getway/640a66150573174130543f52/devices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getway",
+								"640a66150573174130543f52",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE MULTI GETWAY DEVICES",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"devices\": [\n        \"6409e38eaa473702937a48c1\",\n        \"640a275ea041aab8c1707aa2\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/getway/640a66150573174130543f52/devices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getway",
+								"640a66150573174130543f52",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DEVICES",
+			"item": [
+				{
+					"name": "GET ALL DEVICES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/device",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DEVICE BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/device/6409e38eaa473702937a48c1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device",
+								"6409e38eaa473702937a48c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE DEVICE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vendor\": \"Iphone 15\",\n    \"status\": \"online\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/device",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DEVICE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vendor\": \"Iphone 15 pro\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/device/640a67c30573174130543f5d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device",
+								"640a67c30573174130543f5d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DEVICE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/device/640a272dde3ef3598bb67992",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device",
+								"640a272dde3ef3598bb67992"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
